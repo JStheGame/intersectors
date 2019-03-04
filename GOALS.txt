@@ -1,0 +1,240 @@
+GOALS
+=====
+
+- character select menu
+
+- spawn locations dependent upon stage interior
+  - also applies to facing direction
+
+- create more stages
+
+
+- debug mode
+  /- grid overlay
+  - showing invisible hitboxes (sensors)
+
+- give the game some (better) audio
+
+- implement powerups!!
+  - max speed up
+  - bigger jumps 
+  - extra hp
+  - more platforms?
+  - more powerful / larger intersector?
+  - invincibility / armour?
+  - bad powerups?
+  - spawn a ball (or some other object)?
+
+/- improve the sceneStack
+  /- replace it with a more sophisticated object (sceneManager)
+
+
+- what happens when player reaches 0 hp?
+
+- Game object
+  - a number of rounds (maybe in an array or something)
+  - scoreboard
+  - players
+  - stats
+
+- Round object
+  - stage info (interior, exterior)
+  /- special objects (like the ball)
+  - spawn locations (based on the interior of the stage)
+  - maybe a timer?
+  - stats (who did the most damage)
+
+- Stage object
+  - include spawn locations for players
+  - and spawn locations for powerups
+  - interactables (objects, like a ball)
+
+
+- look into gamepad api
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- add a 'flash' command
+
+- think about longer term goals?
+  - other game modes (climbing)
+  - character creation screen
+  - powerups (extra platform, more hp, faster recharge, ...)
+  - main menu
+
+- work on the stage (not just a single platform)
+  - get different types of physical objects
+  - make a set of different stages
+
+
+X- fix the dash command
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ARCHIVE
+=======
+
+/- gravity
+/- make the character cute!
+/- randomize the player colours
+/- enable player controls!
+/- give the player an intersector
+/- get more players
+
+/- improve player movement
+/- give the players a direction (facing)
+/- add a key for locking the player direction
+/- customize the intersector location
+/- try out RORO for Player class
+
+/- add some intersector action (1 point per pixel per frame)
+/- add hp
+
+/- collision detection
+  /- play around with planck.js
+  /- create a moving body
+  /- create a platform
+  /- apply planck to players!
+
+/- refactor: collision detection
+
+/- do platforms
+  /- make a class for new platform
+  /- adjust properties of each surface
+  /- add ability for players to create platforms
+  /- set some limitations (expiry, etc)
+
+/- wrap the screen around
+
+/- work on jumping
+  /- sensors for when you can jump
+  /- walljumps
+
+/- bounce players on side contact
+
+/- re-map the controls
+
+
+/- reorganize the platforms
+/- add the clear command
+
+
+/- HUD stuff
+  /- have a health meter kinda thing?
+  X- add an activity meter
+  /- platform meter
+
+/- fix the screen wrap
+
+/- fix sensor detection
+
+/- add more surface friction
+
+/- apply a drag force
+
+/- implement more shapes
+
+/- alter character walk speed
+
+/- fix polygon shapes
+/- platform placement dependent upon player velocity
+/- figure out z-index stuff (overlapping the HUD)
+  /- stage, sprites, HUD
+
+/- improve the scoreboard!
+  /- make it actually display the score
+  /- make it look nice
+  /- make the score actually work
+
+
+/- change the menu to something that's actually a menu
+
+/- decide where world lives
+/- look into how to destroy the world
+
+/- do platform expiry smarter
+
+
+~- rewrite how platforms check for intersection on construction
+
+~- improve downward slope movement
+
+
+
+
+~- big refactoring!
+  ~- more comments in the code / self-explanation
+  /- more modularity / OOP
+  /- Stage object 
+  /- Game object
+  /- Round object
+  /- make a HUD object
+  /- break up the stage
+    /- outer stage
+    /- inner stage
+    /- stage objects / interactables (like the ball!)
